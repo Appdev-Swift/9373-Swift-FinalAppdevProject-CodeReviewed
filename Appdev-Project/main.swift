@@ -46,7 +46,7 @@ func mainMenu() {
 
             
                 print("\nEmail:")
-                let email = readLine() ?? ""
+                let email = readLine() 
                 var role: String = ""
                 while true  {
                     print("Register as a buyer or seller? : ")
@@ -88,7 +88,7 @@ func mainMenu() {
         }
         func isContactNumberValid(_ contactNumber: String) -> Bool {
             // Define your criteria for a valid contact number
-            let digitSet = CharacterSet.decimalDigits
+            // let digitSet = CharacterSet.decimalDigits
             let nonDigitSet = digitSet.inverted
             
             // Check if the contact number contains only digits and has a specific length requirement
