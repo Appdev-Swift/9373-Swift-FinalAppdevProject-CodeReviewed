@@ -6,7 +6,9 @@
 //
 
 import Foundation
-
+/**
+Declared userInfo, consumerProfile and farmersProfile 
+*/
 let userInfo = UserInfo()
 let consumerProfile = ConsumerProfile()
 let farmerProfile = FarmerProfile()
