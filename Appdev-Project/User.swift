@@ -45,7 +45,7 @@ public class UserInfo {
     /**
      Logins the user depends on their role
      */
-    func login(username: String, password: String) -> User? {
+    func log_in(username: String, password: String) -> User? {
         for user in users {
             if user.username == username && user.password == password {
                 return user
