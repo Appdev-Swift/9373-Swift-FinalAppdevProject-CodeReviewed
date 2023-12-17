@@ -12,7 +12,7 @@ public class ConsumerProfile {
     /**
      Displays the main menu choices
      */
-    func buyerMenu() {
+    func buyer_Menu() {
         while true {
             print("\n--------------- Welcome Buyer ---------------")
             print("1. Browse Products")

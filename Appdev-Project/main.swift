@@ -72,7 +72,7 @@ func mainMenu() {
                     print("\nLogin Successful!")
                     
                     if user.role == "buyer" {
-                        consumerProfile.buyerMenu()
+                        consumerProfile.buyer_Menu()
                     } else if user.role == "seller" {
                         farmerProfile.sellerMenu()
                     }
