@@ -24,13 +24,13 @@ public class ConsumerProfile {
             if let choice = readLine(), let intChoice = Int(choice) {
                 switch intChoice {
                 case 1:
-                    browseProducts()
+                    browse_Products()
                 case 2:
-                    searchProducts()
+                    search_Products()
                 case 3:
-                    displayCart()
+                    display_Cart()
                 case 4:
-                    mainMenu()
+                    main_Menu()
                 default:
                     print("\nInvalid choice. Please choose 1 - 4 only.\n")
                 }
@@ -43,7 +43,7 @@ public class ConsumerProfile {
      /**
      allows user to checkout
      */
-    func displayCart() {
+    func display_Cart() {
         print("\n*************** Cart ***************\n")
         for index in 0..<cart.items.count {
             let item = cart.items[index]
@@ -70,7 +70,7 @@ public class ConsumerProfile {
     /**
      Displays all the list of products
      */
-    func browseProducts() {
+    func browse_Products() {
         let products = Product.getProducts()
         print("\n*************** Products ***************\n")
         print("No.\t\tProductName\tPrice\tHarvested Date")
@@ -102,7 +102,7 @@ public class ConsumerProfile {
     /**
      allows user to search the product
      */
-    func searchProducts() {
+    func search_Products() {
         print("\nEnter product name: ", terminator: "")
         if let productName = readLine() {
             let product = Product.getProducts()
